@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TIẾP CẬN PHƯƠNG TIỆN BỊ NẠN</title>
+    <link rel="stylesheet" href="./src/style.css">
+    
+</head>
+
+<body>
+    <form name="input_form" action="javascript:validate();">
+        <table border="1px">
+            <tr>
+                <th width = "600px"> 
+                    <h1><img src="imgs/logoCSB.png" style="height: 115px;"> </h1>
+                    <h2>BÀI TOÁN</h2>
+                    <h3>TIẾP CẬN PHƯƠNG TIỆN BỊ NẠN</h3>
+                    <table>
+                        <tr>
+                            <th align="left">1. PHƯƠNG TIỆN BỊ NẠN (K):</th>
+                        </tr>
+                        <tr>
+                            <th align="left">- Hướng trôi dạt tổng hợp (độ)</th>
+                            <th>:<input type="text" name="_HTbinan" size="3" value="90" autocomplete="off"> </th>
+                        </tr>
+                        <tr>
+                            <th align="left">- Vận tốc trôi dạt tổng hợp (M/h)</th>
+                            <th>:<input type="text" name="_Vbinan" size="3" value="3.5" autocomplete="off"> </th>
+                        </tr>
+                        <tr>
+                            <th align="left">- Phương vị (độ)</th>
+                            <th>:<input type="text" name="_PT" size="3" value="170" autocomplete="off"></th>
+                        </tr> 
+                        <tr>
+                            <th align="left">- Khoảng cách (liên)</th>
+                            <th>:<input type="text" name="_D" size="3" value="20" autocomplete="off"> </th>
+                        </tr>
+                        <tr>
+                            <th align="left">2. PHƯƠNG TIỆN TÌM KIẾM (M):</th>
+                        </tr>
+                        <tr>
+                            <th align="left">- Vận tốc tiếp cận (M/h)</th>
+                            <th>:<input type="text" name="_Vtk" size="3" value="5" autocomplete="off"></th>
+                        </tr>
+                    </table>
+                    <button type="submit" value="Tính toán">KẾT QUẢ</button>   <button onclick="history.go(0)">BÀI MỚI</button>
+                        <table border="1px" >
+                            <tr>
+                                <th width = "100px"><h4>HTrom</h4></th>
+                                <th width = "100px"><h4>Srom</h4></th>
+                                <th width = "100px"><h4>Vrom</h4></th>
+                                <th width = "100px"><h4>HTm</h4></th>
+                                <th width = "100px"><h4>tm</h4></th>
+                            </tr>
+                            <tr height="30px">
+                                <th><p id="output_text_HTrom"></p></th>
+                                <th><p id="output_text_Srom"></p></th>
+                                <th><p id="output_text_Vrom"></p></th>
+                                <th><p id="output_text_HTm"></p></th>
+                                <th><p id="output_text_tm"></p></th>
+                            </tr>
+                        </table>
+                    <br>
+                    <p1 id="output_text_huongdi"></p1> 
+                    <br>
+                    <p1 id="output_text_thoigian"></p1>
+                </th>
+                <th>
+                    <canvas id="myCanvas" width="600" height="600"></canvas>
+                    <script src="./src/TKCN.js"></script>
+                </th>
+            </tr>
+        </table>       
+       
+    </form>
+</body>
+<footer>
+    <!-- <h6>Nguyễn Đức Mạnh_CSB12.K62.HVHQ - Email:nguyenducmanhcsb12@gmail.com - Hotline: 0346.096.962</h6> -->
+</footer>
+</html>
